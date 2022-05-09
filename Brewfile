@@ -1,0 +1,7 @@
+tap "adoptopenjdk/openjdk"
+tap "homebrew/bundle"
+tap "homebrew/core"
+brew "fzf"
+brew "jenv"
+brew "jq"
+brew "kotlin"
