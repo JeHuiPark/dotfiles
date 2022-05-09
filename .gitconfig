@@ -265,25 +265,20 @@
         fi; \
     }; f"
 [core]
-    excludesfile = /Users/johngrib/.gitignore_global
-    editor = /usr/local/bin/nvim
+    #excludesfile = /Users/johngrib/.gitignore_global
+    editor = vim
     autocrlf = input
     precomposeunicode = true
     quotepath = false
 [diff]
     tool = vimdiff
     wsErrorHighlight = all
-[difftool "vimdiff"]
-    path = /usr/local/bin/vim
 [merge]
-    tool = meld
-    trustExitCode = true
-[mergetool "vimdiff"]
-    path = /usr/local/bin/vim
+    tool = vimdiff
     trustExitCode = true
 
 [init]
 	defaultBranch = main
 [user]
-	name = jehui park
+	name = jehuipark
 	email = pjh2359@gmail.com
