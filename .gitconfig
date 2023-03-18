@@ -1,14 +1,7 @@
 ; include file sample
 ;
 ; file : ~/.gitconfig
-; [user]
-;     name = John Grib
-;     email = johngrib82@gmail.com
-;     signingkey = 1234ABCDE
-; [commit]
-;     gpgsign = true
-; [include]
-;     path = ~/dotfiles/.gitconfig
+
 
 [alias]
     alias-basic = "!#----------------------------------------------------------;\n\
