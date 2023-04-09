@@ -214,14 +214,13 @@
         }; f"
     push-tag = "!# Push the tag with a remote repository.;\n \
         f() { \
-            tags=$(git tag); \
-            if [ -z "$tags" ]; then \
+            if [ -z \"$(git tag)\" ]; then \
                 echo \"There are no tags\"; \
                 exit 0; \
             fi; \
             force_push=`echo \"N\nY\" | fzf --header=\"Do you want force push?\"`; \
             _height=$(stty size | awk '{print $1}'); \
-            tag_name=`echo $tags | fzf --header=\"Select tag\" --preview=\"git l {1} | head -n $_height\" `; \
+            tag_name=`git tag | fzf --header=\"Select tag\" --preview=\"git l {1} | head -n $_height\" `; \
             if [ ${#tag_name} = 0 ]; then \
                 echo \"There is no selected tag\"; \
                 exit 0; \
